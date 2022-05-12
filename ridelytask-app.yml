@@ -1,0 +1,33 @@
+services:
+  ridely-task-api:
+    container_name: "ridely-task-api"
+    image: ridelytask-api
+    restart: unless-stopped
+    volumes:
+      - filestorage:/TempFiles
+    ports:
+      - 80:80
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: http://+:80
+      ConnectionStrings__Npgsql: Server=postgres;Port=5432;Database=Ridely;UserId=someuser;Password=somepassword
+      FileStorage__VisitorsStorageDirectory: /TempFiles
+    networks:
+      - ridelytask-network
+  ridely-task-worker:
+    container_name: "ridely-task-worker"
+    image: ridelytask-worker
+    restart: unless-stopped
+    volumes:
+      - filestorage:/TempFiles
+    environment:
+      ConnectionStrings__Npgsql: Server=postgres;Port=5432;Database=Ridely;UserId=someuser;Password=somepassword
+      FileStorage__VisitorsStorageDirectory: /TempFiles
+    networks:
+      - ridelytask-network
+volumes:
+  filestorage:
+
+networks:
+  ridelytask-network:
+    name: ridelytask-network

@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RidelyTask.Api", "RidelyTask.Api\RidelyTask.Api.csproj", "{DD400531-4546-4FDE-835F-9BAA07EBBAE1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RidelyTask.Worker", "RidelyTask.Worker\RidelyTask.Worker.csproj", "{009088CB-461C-4410-BBA9-E4AAE3DEF5DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RidelyTask.Data", "RidelyTask.Data\RidelyTask.Data.csproj", "{C8B15A81-3780-43DE-BAFA-2BD56EE91156}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DD400531-4546-4FDE-835F-9BAA07EBBAE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD400531-4546-4FDE-835F-9BAA07EBBAE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD400531-4546-4FDE-835F-9BAA07EBBAE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD400531-4546-4FDE-835F-9BAA07EBBAE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{009088CB-461C-4410-BBA9-E4AAE3DEF5DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{009088CB-461C-4410-BBA9-E4AAE3DEF5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{009088CB-461C-4410-BBA9-E4AAE3DEF5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{009088CB-461C-4410-BBA9-E4AAE3DEF5DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B15A81-3780-43DE-BAFA-2BD56EE91156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B15A81-3780-43DE-BAFA-2BD56EE91156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B15A81-3780-43DE-BAFA-2BD56EE91156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B15A81-3780-43DE-BAFA-2BD56EE91156}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,21 @@
+services:
+  postgres:
+    container_name: "postgres"
+    image: postgres:13.2-alpine
+    restart: unless-stopped
+    volumes:
+      - dbstorage:/var/lib/postgresql/data
+    environment:
+      POSTGRES_USER: someuser
+      POSTGRES_PASSWORD: somepassword
+      POSTGRES_DB: Ridely
+    ports:
+      - 5432:5432
+    networks:
+      - ridelytask-network
+volumes:
+  dbstorage:
+
+networks:
+  ridelytask-network:
+    name: ridelytask-network
